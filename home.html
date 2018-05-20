@@ -64,7 +64,7 @@
         .content {
             padding: 20px;
             width: fit-content;
-            float: left;
+			margin: 0 auto;
         }
         th {
             font-size: x-large;
@@ -73,6 +73,29 @@
         td {
             font-size: large;
         }
+		
+
+.tooltipaa .tooltiptext {
+    visibility: hidden;
+
+           background-color: rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+
+    /* Position the tooltip */
+    position: fixed;
+    z-index: 1;
+	
+	border-radius: 200px;
+	height: 400px;
+	width: 400px;
+}
+
+.tooltipaa:hover .tooltiptext {
+    visibility: visible;
+}
 
     </style>
 </head>
@@ -86,14 +109,14 @@
     <div class="dania2">
         <table class="table">
         
-            <tr><th>Szyby Lustra</th><th style="text-align: right;">19&nbsp;PLN</th></tr>
+            <tr><th class="tooltipaa">Szyby Lustra<span class="tooltiptext"><h3>Szyby Lustra</h3> <p>tel: 123456<p> <p>ul. Kolorowa 123 p m.666</p></span></th><th style="text-align: right;">19&nbsp;PLN</th></tr>
             <tr><td colspan="2">Żurek staropolski // wątróbka drobiowa na smażonej chałce z jabłkiem i cebulą</td></tr>
         
-            <tr><th>Spółdzielnia</th><th style="text-align: right;">19&nbsp;PLN</th></tr>
+            <tr><th class="tooltipaa">Spółdzielnia<span class="tooltiptext">bbbbbbbbbbbbbbbb</span></th><th style="text-align: right;">19&nbsp;PLN</th></tr>
             <tr><td colspan="2">Krem z kalafiora z palonym jarmużem / azjatycki schab, puree z batata, fasolka szparagowa z sezamem</td></tr>
         
             <tr><th>Motywy</th><th style="text-align: right;">19&nbsp;PLN</th></tr>
-            <tr><td colspan="2">Krem z białych warzyw // karczek pieczony, puree ziemniaczane, surówka z marchewki lub kotlet wegetariański, puree ziemniaczane, surówka z marchewki / 18 zł / 19 zł</td></tr>
+            <tr><td colspan="2">Krem z białych warzyw // karczek pieczony, puree ziemniaczane</td></tr>
         
             <tr><th>Doki</th><th style="text-align: right;">19&nbsp;PLN</th></tr>
             <tr><td colspan="2">zupa: chłodnik litewski z jajkiem
